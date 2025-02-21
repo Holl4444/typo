@@ -1,0 +1,8 @@
+.explanation {
+  background-color: var(--secondary);
+  color: var(--primary-text);
+  padding: 2rem;
+  border-radius: 0.4rem;
+  max-width: 50rem;
+  margin: 2rem auto;
+}

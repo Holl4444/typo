@@ -1,0 +1,30 @@
+.basicsContent {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: var(--nav-height);
+}
+
+/* Inherit border styles if needed */
+.basicsContent::before,
+.basicsContent::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: calc((100% - 1200px) / 2);
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: var(--z-content);
+}
+
+.basicsContent::before {
+  left: 0;
+}
+
+.basicsContent::after {
+  right: 0;
+}

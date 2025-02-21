@@ -1,95 +1,65 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Image from 'next/image';
+import Hero from '../components/Hero/Hero';
+import Header from '../components/Header/Header';
+import ScratchEmbed from '../components/ScratchEmbed/ScratchEmbed';
+import Explanation from '../components/Explanation/Explanation';
+import Quiz from '../components/Quiz/Quiz';
+import FlipCard from '../components/FlipCard/FlipCard';
+import { typescriptCards } from '../app/data/cardQuestions';
+import { typescriptBasicsQuiz } from '../app/data/quizQuestions';
+import styles from './page.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
+    <div className={styles.homeContent}>
+      <Header />
+      <Hero
+        leftArticle={{
+          title: 'What is it?',
+          content:
+            'TypeScript is a superset of JavaScript, which means it’s JavaScript with extra features...you can write JavaScript inside a TypeScript file and it will still work. The extra you get with TypeScript is more control over the type of your variables.',
+        }}
+        rightArticle={{
+          title: 'Why care?',
+          content:
+            'Type errors make up around 15% of initial bugs in JavaScript projects according to a recent study by Microsoft Research. These type of errors may seem minor when you are working on small scale projects but can become serious issues, especially in larger projects, where things are harder to keep track of.',
+        }}
+        image={{
+          src: '/dinoPuzzled.svg',
+          alt: 'Confused dinosaur',
+          width: 200,
+          height: 200,
+        }}
+      />
+      <ScratchEmbed
+        projectId="1136292733"
+        title="Introduction to Types"
+        description="A dinosaur finds bugs in his code without TypeScript"
+      />
+      <Explanation />
+      <Quiz
+        title="📝 TypeScript Quiz: Understanding Type Safety"
+        questions={typescriptBasicsQuiz}
+        questionsToShow={3}
+      />
+      <ScratchEmbed
+        projectId="your-second-project-id"
+        title="Practice with Types"
+        description="Hands-on practice with TypeScript type checking"
+      />
+      <FlipCard
+        title="Test Your TypeScript Knowledge"
+        cards={typescriptCards}
+      />
+      <div className={styles.imageWrapper}>
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src="/dinoHappy.svg"
+          alt="A happy dinosaur"
+          width={200}
+          height={200}
+          className={styles.flipped}
         />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
     </div>
   );
 }

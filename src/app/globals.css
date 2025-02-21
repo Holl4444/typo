@@ -1,13 +1,32 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #2f74c0; 
+  --secondary: #7c3aed; 
+  --accent: #ff6b6b; 
+  --primary-text: #ffffff;
+  --secondary-text: #ffffff;
+
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 1.8rem;
+  --font-size-body: 1.1rem;
+  --line-height-heading: 1.2;
+  --line-height-body: 1.6;
+
+  --z-content: 1;
+  --z-sticky: 10;
+  --z-navigation: 100;
+  --z-dropdown: 200;
+  --z-modal: 300;
+  --z-tooltip: 400;
+
+  --nav-height: 7rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
@@ -19,15 +38,40 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
+  background-image: url('../../public/codeBackground.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-y: auto;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+main {
+  flex: 1;
+  margin-top: 4rem; /* Add margin to account for fixed nav height */
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-heading);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-heading);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  margin-bottom: 1rem;
 }
 
 a {
@@ -38,5 +82,17 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --nav-height: 5rem;  /* Adjust for mobile */
   }
 }
