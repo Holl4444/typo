@@ -73,6 +73,7 @@ Certainly Claude would have as many recommendations for what we should add or ch
 * Tailor the language better for kids.
 * Add an on website TypeScript Playground.
 * Add clearer explanations and maybe walk through tutorials.
+* Consider other options for adding the scratch content.
 
 ## Author
 Holly - 
