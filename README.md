@@ -1,5 +1,5 @@
 # Typo
-![ThumbNail](https://github.com/user-attachments/assets/e9ecc20f-8b3e-4e9a-bbea-6546dbd701a8)
+<image src="https://github.com/user-attachments/assets/e9ecc20f-8b3e-4e9a-bbea-6546dbd701a8" width=500 />
 
 
 ## Contents
@@ -20,14 +20,16 @@ I had young coders in mind, who would have some experience with JavaScript. The 
   Next.js - TypeScript - CSS - ClaudeAI
   
 ## Screenshots
-![FlipCard](https://github.com/user-attachments/assets/88e638a6-60f7-428d-8661-2a5751633c43)
+<img src="https://github.com/user-attachments/assets/88e638a6-60f7-428d-8661-2a5751633c43" width="750" />
 
-![Quiz](https://github.com/user-attachments/assets/0b695f37-9a72-4b01-bb53-a4a576728061)
+<img src="https://github.com/user-attachments/assets/0b695f37-9a72-4b01-bb53-a4a576728061" align="center" />\
+
 
 ![dinoReadMe](https://github.com/user-attachments/assets/1586020a-3bf7-4e5d-9ebd-8dc70d646707)
   
 ## Links
 Scratch  https://scratch.mit.edu/
+
 Figma  https://www.figma.com/
 
 ## The Process
