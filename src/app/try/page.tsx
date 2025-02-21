@@ -76,9 +76,9 @@ export default function Try() {
         </h2>
         <div className={styles.textContainer}>
           <p>
-            Hey there, future coder! Did you know you can peek behind
+            {`Hey there, future coder! Did you know you can peek behind
             the scenes of this webpage? It's like having X-ray vision
-            for websites! Here's how:
+            for websites! Here's how:`}
           </p>
           <pre className={styles.codeSteps}>
             {`1. Right-click anywhere on this page
