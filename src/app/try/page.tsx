@@ -70,6 +70,29 @@ export default function Try() {
           </div>
         </div>
       </section>
+      <section className={styles.contentSection}>
+        <h2 className={styles.sectionTitle}>
+          Want to See How This Page Works?
+        </h2>
+        <div className={styles.textContainer}>
+          <p>
+            Hey there, future coder! Did you know you can peek behind
+            the scenes of this webpage? It's like having X-ray vision
+            for websites! Here's how:
+          </p>
+          <pre className={styles.codeSteps}>
+            {`1. Right-click anywhere on this page
+2. Click 'Inspect' (or press F12 on your keyboard)
+3. Look for files ending in .tsx - that's TypeScript!
+4. Can you spot how we made the dinosaurs appear? 🦖`}
+          </pre>
+          <p>
+            All the cool animations, dinosaurs, and interactive parts
+            you see here were made with TypeScript. Try finding the
+            code that makes the cards flip!
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
