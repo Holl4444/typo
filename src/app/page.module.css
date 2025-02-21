@@ -34,14 +34,41 @@
   color: white; /* Alt text color */
 }
 
+.quizSection {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.quizOverlay {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(61%) scaleX(-1);
+  z-index: 1;
+  pointer-events: none;
+}
+
 .flipped {
   transform: scaleX(-1);
+}
+
+@media (max-width: 1400px) {
+  .quizOverlay {
+    right: -50px;
+    width: 200px;
+    height: auto;
+  }
 }
 
 /* Media queries */
 @media (max-width: 1200px) {
   .homeContent::before,
   .homeContent::after {
+    display: none;
+  }
+    .quizOverlay {
     display: none;
   }
 }

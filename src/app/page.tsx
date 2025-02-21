@@ -37,11 +37,20 @@ export default function Home() {
         description="A dinosaur finds bugs in his code without TypeScript"
       />
       <Explanation />
-      <Quiz
-        title="📝 TypeScript Quiz: Understanding Type Safety"
-        questions={typescriptBasicsQuiz}
-        questionsToShow={3}
-      />
+      <div className={styles.quizSection}>
+        <Quiz
+          title="📝 TypeScript Quiz"
+          questions={typescriptBasicsQuiz}
+          questionsToShow={3}
+        />
+        <Image
+          src="/dinoStudy.svg"
+          alt="Dinosaur preparing to study TypeScript"
+          width={200}
+          height={200}
+          className={styles.quizOverlay}
+        />
+      </div>
       <ScratchEmbed
         projectId="your-second-project-id"
         title="Practice with Types"
@@ -57,8 +66,7 @@ export default function Home() {
           alt="A happy dinosaur"
           width={200}
           height={200}
-          className={styles.flipped}
-        />
+      />
       </div>
     </div>
   );

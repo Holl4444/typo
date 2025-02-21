@@ -36,7 +36,7 @@ body {
 }
 
 body {
-  color: var(--foreground);
+  color: var(--primary-text);
   background: var(--background);
   background-image: url('../../public/codeBackground.png');
   background-size: cover;
@@ -59,6 +59,7 @@ main {
 h1 {
   font-size: var(--font-size-h1);
   line-height: var(--line-height-heading);
+
 }
 
 h2 {

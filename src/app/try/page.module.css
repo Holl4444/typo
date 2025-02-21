@@ -1,0 +1,90 @@
+.finalContent {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 4rem;
+  margin-top: var(--nav-height);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+.mainTitle {
+  font-size: 3rem;
+  color: var(--primary-text);
+  margin-bottom: 3rem;
+  background-color: var(--secondary);
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+.contentSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: var(--primary-text);
+  margin-bottom: 1rem;
+  background-color: var(--primary);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  align-self: flex-start;
+  max-width: fit-content;
+}
+
+.textContainer {
+  background-color: var(--secondary);
+  padding: 2rem;
+  border-radius: 0.4rem;
+  width: 100%;
+}
+
+.textContainer p {
+  color: var(--primary-text);
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.setupWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+}
+
+.setupDino {
+  transform: scaleX(-1);
+  flex-shrink: 0;
+  margin-top: 2rem;
+}
+
+.ctaLink {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.ctaLink:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .finalContent {
+    padding: 2rem;
+  }
+  .setupDino {
+    display: none;
+  }
+}

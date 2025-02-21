@@ -1,0 +1,23 @@
+.feature {
+  background-color: var(--secondary);
+  color: var(--primary-text);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  border-radius: 0.4rem;
+}
+
+.left {
+  flex-direction: row;
+}
+
+.right {
+  flex-direction: row-reverse;
+}
+
+.noImage {
+  justify-content: center;
+}

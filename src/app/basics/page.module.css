@@ -5,8 +5,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 2rem 4rem;
   margin-top: var(--nav-height);
+    margin-left: auto;
+  margin-right: auto;
 }
 
 /* Inherit border styles if needed */
@@ -16,7 +18,7 @@
   position: fixed;
   top: 0;
   bottom: 0;
-  width: calc((100% - 1200px) / 2);
+  width: calc((100% - 1400px) / 2);
   background-color: rgba(0, 0, 0, 0.8);
   z-index: var(--z-content);
 }
@@ -27,4 +29,32 @@
 
 .basicsContent::after {
   right: 0;
+}
+
+.flipped {
+  transform: scaleX(-1);
+}
+
+.decorationWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sideDecoration {
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translate(50%, -115%);
+  width: 200px;
+  height: auto;
+  z-index: 2;
+  pointer-events: none;
+}
+
+@media (max-width: 1400px) {
+  .sideDecoration {
+    display: none;
+  }
 }
