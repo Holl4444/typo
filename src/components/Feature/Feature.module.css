@@ -6,8 +6,9 @@
   gap: 2rem;
   max-width: 1200px;
   margin: 2rem auto;
-  padding: 0 2rem;
+  padding: 1rem;
   border-radius: 0.4rem;
+  min-height: 5rem;
 }
 
 .left {
@@ -20,4 +21,16 @@
 
 .noImage {
   justify-content: center;
+}
+
+.text {
+  padding: 1rem;
+  flex: 1;
+}
+
+.text p {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50)
 }

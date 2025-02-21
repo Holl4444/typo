@@ -24,9 +24,7 @@ export default function Basics() {
       <Image src="/jsFunc.png" alt="" width={830} height={300} />
       <Feature
         title="The TS:"
-        text="By adding types (a: number) your can immediately see both what is expected input and where we have given a string
-instead, highlighting the issue while we are writing code, allowing us to bypass the problem and helping anyone working on the
-code later to have a better understanding of how to use it."
+        text="By adding types (a: number) you can immediately see both what is expected input and where we have given a string instead, highlighting the issue while we are writing code. This allows us to bypass the problem and helps anyone working on the code later to have a better understanding of how to use it."
       />
       <Image src="/tsFunc.png" alt="" width={830} height={300} />
       <Split

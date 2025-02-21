@@ -15,6 +15,7 @@ type FeatureProps = {
 };
 
 export default function Feature({
+  title,
   text,
   image,
   imagePosition = 'right',
@@ -25,7 +26,10 @@ export default function Feature({
         image ? styles[imagePosition] : styles.noImage
       }`}
     >
-      <p>{text}</p>
+      <div className={styles.contentContainer}>
+        {title && <h2 className={styles.title}>{title}</h2>}
+        {text && <p className={styles.text}>{text}</p>}
+      </div>
       {image && (
         <Image
           src={image.src}

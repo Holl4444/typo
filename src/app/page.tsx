@@ -56,17 +56,19 @@ export default function Home() {
         title="Practice with Types"
         description="Hands-on practice with TypeScript type checking"
       />
-      <FlipCard
-        title="Test Your TypeScript Knowledge"
-        cards={typescriptCards}
-      />
+      <div className={styles.cardContainer}>
+        <FlipCard
+          title="Test Your TypeScript Knowledge"
+          cards={typescriptCards}
+        />
+      </div>
       <div className={styles.imageWrapper}>
         <Image
           src="/dinoHappy.svg"
           alt="A happy dinosaur"
           width={200}
           height={200}
-      />
+        />
       </div>
     </div>
   );

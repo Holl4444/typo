@@ -91,7 +91,7 @@ export const typescriptCards: FlipCard[] = [
     answer: {
       isTrue: false,
       explanation:
-        'Red squiggly lines highlight errors and hovering over your code will show types. VSC also updates all references to individual changes made in your code.',
+        'Red lines highlight errors and hovering over your code will show types.',
     },
   },
   {

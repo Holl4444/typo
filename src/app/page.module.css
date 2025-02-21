@@ -72,3 +72,14 @@
     display: none;
   }
 }
+
+.cardContainer {
+  padding: 0 4rem;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .cardContainer {
+    padding: 0 2rem;
+  }
+}
