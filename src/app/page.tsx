@@ -52,9 +52,9 @@ export default function Home() {
         />
       </div>
       <ScratchEmbed
-        projectId="your-second-project-id"
+        projectId="1137143975"
         title="Practice with Types"
-        description="Hands-on practice with TypeScript type checking"
+        description="A dinosaur discovers the benefits of typescript."
       />
       <div className={styles.cardContainer}>
         <FlipCard
