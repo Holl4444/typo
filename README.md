@@ -1,13 +1,14 @@
-# Typo
+# $${\color{#ff6b6b}Typo}$$
 <image src="https://github.com/user-attachments/assets/e9ecc20f-8b3e-4e9a-bbea-6546dbd701a8" width=500 />
 
 
-## Contents
+## $${\color{#ff6b6b}Contents}$$
 * [Overview](#overview)
 * [Built With](#built-with)
 * [Screenshots](#screenshots)
 * [Links](#links)
 * [Process](#the-process)
+* [AI Process](#ai-process)
 * [Key Takeaways](#key-takeaways)
 * [Continued development](#continued-development)
 * [Author](#author)
@@ -42,7 +43,8 @@ I made a rough animation of my own and thought about how I would display it. I d
 
 The two other mediums I had briefly considered were a LinkedIn article and a webpage. Clearly LinkedIn wasn't the place for this project to live but a website would give me the freedom to explore my ideas. I was becoming very aware of time, having spent a good deal of it by this point and I knew from the offset that if I was going to go down the webpage route I was going to need help. I made a micro plan, deciding immediately that I would go for next.js so that my project would be set up, ready to go straight away and that pathing, if there was any, would be made easy. I also decided instantly to try to use AI to help me code.
 
-Ai is a tool we've been looking into during the course of the bootcamp. Like it or loathe it it's not going away, so we've been working on when, where and how to use it. I've had a love hate thing going with CoPilot, which we were lucky enough to get a pro version of in our GitHub student packs. I don't feel that CoPilot has the knack for picking up on intent in the same way that chatGPT does, the ability to produce code to the same level as Claude and it lacks the process sharing that you get with DeepSeek. I guess everyone has a go-to by now and I have been pretty verbose about my preference for Claude! Which is why when a team mate (we were working in pods on individual tasks this week) saw that I was using CoPilot in VSC she queried why I wasn't using Claude. G a m e C h a n g e r. As it turns out you can pick between a few AI models in VSCode! With my dearest AI companion by my side I set to work.
+## AI Process
+$${\color{#ff6b6b}AI}$$ is a tool we've been looking into during the course of the bootcamp. Like it or loathe it it's not going away, so we've been working on when, where and how to use it. I've had a love hate thing going with CoPilot, which we were lucky enough to get a pro version of in our GitHub student packs. I don't feel that CoPilot has the knack for picking up on intent in the same way that chatGPT does, the ability to produce code to the same level as Claude and it lacks the process sharing that you get with DeepSeek. I guess everyone has a go-to by now and I have been pretty verbose about my preference for Claude! Which is why when a team mate (we were working in pods on individual tasks this week) saw that I was using CoPilot in VSC she queried why I wasn't using Claude. G a m e C h a n g e r. As it turns out you can pick between a few AI models in VSCode! With my dearest AI companion by my side I set to work.
 
 Claude and I worked until late in the evening. I was having a blast. Using it in all the right ways: asking questions, talking code through, getting suggestions. Let's be clear, Claude built a lot of this website, but i did too. Not only was this project a real breakthrough in prompt engineering for me but I was learning so much from the...well the collaboration! The problems came when I didn't stop while I was ahead.
 
