@@ -68,13 +68,15 @@ Certainly Claude would have as many recommendations for what we should add or ch
 
 ## Continued Development
 * To get user feedback
+* Consider other options for adding the scratch content.
 * Sort the dodgy logic in the nav bar.
+* Correct the inflexibility of images on the Basics page.
 * To check some of the CSS as what looked great on my machine showed weak edges on another.
 * Add more accessibility. Including the colour scheme which, while fun for kids might not have been the greatest choice for readability or constrast.
 * Tailor the language better for kids.
 * Add an on website TypeScript Playground.
 * Add clearer explanations and maybe walk through tutorials.
-* Consider other options for adding the scratch content.
+
 
 ## Author
 Holly - 
