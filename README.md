@@ -81,7 +81,7 @@ Certainly Claude would have as many recommendations for what we should add or ch
 
 
 ## Author
-Holly - 
+$${\color{#ff6b6b}Holly}$$ - 
 https://github.com/Holl4444
 
 https://www.linkedin.com/in/holly-goulbourne-9b0952122/
